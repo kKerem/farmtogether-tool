@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://kkerem.com/wp-content/themes/kkeremv3/assets/img/icons/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table-locale-all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js"></script>
+<script src="js/translate.js"></script>
+    <title>Farm Together Calculation Tool</title>
+</head>
+<body class="container-fluid">
+  <svg class="position-absolute w-100" style="margin:-15px;z-index:-99999" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#0099ff" fill-opacity="0.1" d="M0,192L120,213.3C240,235,480,277,720,250.7C960,224,1200,128,1320,80L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+		</path>
+	</svg>
+<div class="mx-lg-5 px-lg-5 py-lg-3">
+
+  <header>
+    <div class="row justify-content-between align-items-center mb-2">
+        <div class="col col-lg-8 pt-1">
+            <div class="row">
+                <div class="col-auto">
+                    <img src="images/logov2.png">
+                </div>
+                <div class="col pl-lg-2 d-none d-lg-block">
+                  <h5 class="m-0">Farm Together Calculation Tool</h5>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
+                      <li><a href="" class="nav-link pl-0 pr-2"><i class="fad fa-seedling mr-1"></i> <span data-translate="ekinler">Crops</span></a></li>
+                      <li><a href="#" class="nav-link px-2 text-secondary cursor-default" data-bs-toggle="tooltip" title="Yapım aşamasında"><i class="fad fa-flower-tulip mr-1"></i> <span data-translate="cicekler">Flowers</span></a></li>
+                      <li><a href="#" class="nav-link px-2 text-secondary cursor-default" data-bs-toggle="tooltip" title="Yapım aşamasında"><i class="fad fa-ram mr-1"></i> <span data-translate="hayvanlar">Animals</span></a></li>
+                      <li><a href="#" class="nav-link px-2 text-secondary cursor-default" data-bs-toggle="tooltip" title="Yapım aşamasında"><i class="fad fa-fish mr-1"></i> <span data-translate="baliklar">Fishes</span></a></li>
+                      <li><a href="#" class="nav-link px-2 text-secondary cursor-default" data-bs-toggle="tooltip" title="Yapım aşamasında"><i class="fad fa-sparkles mr-1"></i> <span data-translate="eventler">Events</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-end align-items-center">
+            <a class="nav-link px-2 text-secondary text-center" href="#" data-bs-toggle="tooltip" title="Thank you"><i class="fad fa-hand-heart mr-1 fa-lg"></i><small class="d-block">Beğen</small></a>
+            <a class="nav-link px-2 text-secondary text-center" href="#" data-bs-toggle="tooltip" title="Buy me a coffee"><i class="fad fa-coffee-togo mr-1 fa-lg"></i><small class="d-block">Bağış</small></a>
+        </div>
+        <div class="col-auto d-flex justify-content-end align-items-center">
+          <select class="form-control" id="locale">
+            <option value="en-US" selected>English</option>
+            <option value="tr-TR">Türkçe</option>
+            <option value="de-DE">German</option>
+          </select>
+        </div>
+    </div>
+
+</header>
+
+  
+    <div id="toolbar">
+
+      
+      
+      <div class="row">
+        <div class="col-lg-auto mevsimler_dugmeleri">
+            <div class="input-group mb-3">
+                <input type="number" class="form-control search-input" style="border-right:none !important" id="ek" name="ek" placeholder="Para" value="30000">
+                <div class="input-group-append">
+                  <span class="input-group-text bg-white"><img src="images/Money.png"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-auto col-12 text-center py-0 px-1 mevsimler_dugmeleri">
+          <button class="btn p-2 active" id="clear"><i class="fas fa-list-alt pr-2"></i> <span data-translate="showall">Show All</span></button>
+        </div>
+        <div class="col-lg-auto col-6 text-center py-0 px-1 mevsimler_dugmeleri">
+            <button class="btn p-2" id="filter-ilkbahar"><img src="images/Spring.png" alt=""> <span data-translate="spring">Spring</span></button>
+        </div>
+        <div class="col-lg-auto col-6 text-center py-0 px-1 mevsimler_dugmeleri">
+            <button class="btn p-2" id="filter-yaz"><img src="images/Summer.png" alt=""> <span data-translate="summer">Summer</span></button>
+        </div>
+        <div class="col-lg-auto col-6 text-center py-0 px-1 mevsimler_dugmeleri">
+            <button class="btn p-2" id="filter-sonbahar"><img src="images/Fall.png" alt=""> <span data-translate="autumn">Autumn</span></button>
+        </div>
+        <div class="col-lg-auto col-6 text-center py-0 px-1 mevsimler_dugmeleri">
+            <button class="btn p-2" id="filter-kis"><img src="images/Winter.png" alt=""> <span data-translate="winter">Winter</span></button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div>
+
+
+<table
+  id="table"
+  data-locale="en"
+  data-toggle="table"
+  data-unique-id="id"
+  data-search="true"
+  data-show-columns="true"
+  data-show-multi-sort="true"
+  data-select-item-name="selectItemName"
+  data-toolbar="#toolbar"
+  data-mobile-responsive="true"
+  data-show-button-icons="true"
+  data-show-pagination-switch="true"
+  data-pagination="true"
+  data-page-size="10"
+  data-url="data.json">
+  <thead>
+    <tr>
+        <th data-field="name" data-sortable="true" data-formatter="image" class="rounded-top-left rounded-bottom-left"><span data-translate="tohum">Seed</span></th>
+        <th data-field="buy_price" data-sortable="true" data-formatter="para"><span data-translate="ekme">Planting</span></th>
+        <th data-field="harvest_income" data-sortable="true" data-formatter="satis"><span data-translate="hasat">Harvest</span></th>
+        <th data-field="harvest_time" data-sortable="true" data-formatter="sure"><span data-translate="sure">Duration</span></th>
+        <th data-field="ekilebilir" data-formatter="ekilebilir" class="ekilebilir"><span data-translate="ekilebilir">Arable</span></th>
+        <th data-field="maaliyet" data-formatter="maaliyet" class="maaliyet"><span data-translate="maaliyet">Cost</span></th>
+        <th data-field="kazanc" data-formatter="kazanc" class="kazanc"><span data-translate="kazanc">Earning</span></th>
+    </tr>
+</thead>
+</table>
+</div>
+    
+
+
+
+<script>
+var $table = $('#table')
+var $button = $('#button')
+secili_dil = 'en'
+
+$(function() {
+  $table.bootstrapTable()
+
+  $('#locale').change(function () {
+      $table.bootstrapTable('refreshOptions', {
+        locale: $(this).val()
+      })
+      $table.bootstrapTable('changeTitle', {
+        name : dictionary[secili_dil]['tohum'],
+        buy_price : dictionary[secili_dil]['ekme'],
+        harvest_income : dictionary[secili_dil]['hasat'],
+        harvest_time : dictionary[secili_dil]['sure'],
+        ekilebilir : dictionary[secili_dil]['ekilebilir'],
+        maaliyet : dictionary[secili_dil]['maaliyet'],
+        kazanc : dictionary[secili_dil]['kazanc'],
+      })
+      switch ($('#locale').val()) {
+        case "tr-TR":
+        secili_dil = 'tr'
+          break;
+        case "de-DE":
+        secili_dil = 'de'
+          break;
+        default:
+        secili_dil = 'en'
+          break;
+      }
+    })
+  })
+
+
+
+
+
+  $("#toolbar .mevsimler_dugmeleri button").click(function () {
+        $('#toolbar .mevsimler_dugmeleri button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+  function formatState (lang) {
+	  if (!lang.id) { return lang.text; }
+		var $lang = $('<span><i class="flag-icon rounded mr-2 flag-icon-' + lang.element.value.split('-')[1].toLowerCase() + '"></i>' + lang.text + '</span>');
+		return $lang;
+	};
+	$("#locale").select2({
+		templateResult: formatState,
+		templateSelection: formatState,
+    minimumResultsForSearch: Infinity
+	});
+  
+  function mevsim(value) {
+    var mevsimler = "";
+    for(var i=0; i<value.length; i++){
+      if(value[i] == "İlkbahar" )
+        var mevsimler = mevsimler + "<img src='images/Spring.png' class='ml-1'>";
+      else if(value[i] == "Yaz" )
+        var mevsimler = mevsimler + "<img src='images/Summer.png' class='ml-1'>";
+      else if(value[i] == "Sonbahar" )
+        var mevsimler = mevsimler + "<img src='images/Fall.png' class='ml-1'>";
+      else if(value[i] == "Kış" )
+        var mevsimler = mevsimler + "<img src='images/Winter.png' class='ml-1'>";
+    }
+    return mevsimler;
+  }
+
+  
+  function image(value, row) {
+    switch ($('#locale').val()) {
+      case "tr-TR":
+        value = row['name'];
+        break;
+      case "de-DE":
+        value = row['name_de-DE'];
+        break;
+    
+      default:
+        value = row['name_en-US'];
+        break;
+    }
+        return "<img src='images/" + row['name_en-US'].replace(" ", "_") + ".png' class='mr-2'>" + value + "<div class='float-right'>" + mevsim(row['season']) + "</div>";
+    }
+
+    function para(value, row) {
+      var sorgu_exp = row['buy_exp'] > 0 ? row['buy_exp'] + '<img src="images/XP.png" class="ml-1">' : '';
+      return value + '<img src="images/Money.png" class="mx-1">' + sorgu_exp;
+    // return console.log(row['buy_exp'])
+    } 
+    
+    function satis(value, row) {
+      return value + '<img src="images/Money.png" class="mx-1">' + row['harvest_exp'] + '<img src="images/XP.png" class="ml-1">';
+    } 
+
+    function sure(value, row) {
+        return ConvertMinutes(value) + '<img src="images/Time.png" class="ml-1">';
+    }
+
+    
+
+    function ekilebilir(value, row) {
+      return Math.floor(document.getElementById('ek').value / row['buy_price']) + dictionary[secili_dil]['piece'];
+    }
+    
+    function maaliyet(value, row) {
+      if(Math.floor(document.getElementById('ek').value / row['buy_price'] > 0)) {
+        var sorgu_exp = row['buy_exp'] > 0 ? '<span class="text-success">+' + Math.floor(document.getElementById('ek').value / row['buy_price']) * row['buy_exp'] + '<img src="images/XP.png" class="ml-1"></span>' : '';
+      }
+      return "<span class='text-danger'>-" + Math.floor(document.getElementById('ek').value / row['buy_price']) * row['buy_price'] + '<img src="images/Money.png" class="mx-1"></span>' + sorgu_exp;
+    }
+    
+    function kazanc(value, row) {
+      if(Math.floor(document.getElementById('ek').value / row['buy_price']) > 0) {
+      return "<span class='text-success'>+" + (row['harvest_income'] - row['buy_price']) * Math.floor(document.getElementById('ek').value / row['buy_price']) + '<img src="images/Money.png" class="mx-1">+' 
+      + Math.floor(document.getElementById('ek').value / row['buy_price']) * row['harvest_exp'] + '<img src="images/XP.png" class="ml-1"></span>';
+      }
+      else {
+        return "0";
+      }
+    }
+
+
+
+
+    
+    $('#ek').on("input", function () {
+        $table.bootstrapTable('updateByUniqueId', {
+        maaliyet: document.querySelector("maaliyet")
+        })
+    })
+    
+    $('#clear').click(function () {
+        $table.bootstrapTable('filterBy', {})
+    });
+
+    $('#filter-ilkbahar').click(function () {
+        $table.bootstrapTable('filterBy', {
+          id: [0,3,4,5,7,10,13,14,15,17,18,19,21,22,23,29,32,33,34,35,36,37,40,41,44,45,46,47,50,51]
+        })
+    });
+    $('#filter-yaz').click(function () {
+        $table.bootstrapTable('filterBy', {
+            id: [0,7,8,10,15,16,18,21,22,23,24,26,27,28,29,32,33,38,39,40,41,42,43,45,48,49,50]
+        })
+    });
+    $('#filter-sonbahar').click(function () {
+        $table.bootstrapTable('filterBy', {
+            id: [0,1,2,5,6,9,11,16,17,22,23,24,28,29,30,31,32,33,36,37,40,44,45,48,49,50,51,52]
+        })
+    });
+    $('#filter-kis').click(function () {
+        $table.bootstrapTable('filterBy', {
+            id: [0,1,2,3,4,5,8,9,12,14,15,20,22,25,26,27,30,31,32,33,35,38,40,45,46,50]
+        })
+    });
+
+    
+    function buildTable($el, cells, rows) {
+      var i
+      var j
+      var row
+      var columns = []
+      var data = []
+  
+  
+      $el.bootstrapTable('destroy').bootstrapTable({
+        columns: columns,
+        data: data,
+        lang: lang,
+        showFullscreen: true,
+        search: true,
+        stickyHeader: true,
+        stickyHeaderOffsetLeft: parseInt($('body').css('padding-left'), 10),
+        stickyHeaderOffsetRight: parseInt($('body').css('padding-right'), 10),
+        theadClasses: classes
+      })
+    }
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+
+    
+   
+  
+  
+
+  </script>
+
+<script src="js/external.js"></script>
+
+</div>
+</body>
+</html>

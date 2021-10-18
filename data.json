@@ -1,0 +1,694 @@
+{
+    "total": 53,
+    "totalNotFiltered": 53,
+    "rows": [
+        {
+            "id": 0,
+            "name": "Marul",
+            "name_en-US": "Lettuce",
+            "name_de-DE" : "Salat",
+            "buy_price": 15,
+            "buy_exp": 0,
+            "harvest_time": 10,
+            "harvest_income": 30,
+            "harvest_exp": 1,
+            "season": ["İlkbahar", "Yaz", "Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 1,
+            "name": "Turp",
+            "name_en-US": "Turnip",
+            "name_de-DE" : "Steckrübe",
+            "buy_price": 200,
+            "buy_exp": 0,
+            "harvest_time": 10,
+            "harvest_income": 226,
+            "harvest_exp": 3,
+            "season": ["Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 2,
+            "name": "Meksika Turbu",
+            "name_en-US": "Jicama",
+            "name_de-DE" : "Yambohne",
+            "buy_price": 2150,
+            "buy_exp": 4,
+            "harvest_time": 10,
+            "harvest_income": 2220,
+            "harvest_exp": 6,
+            "season": ["Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 3,
+            "name": "Kabak",
+            "name_en-US": "Zucchini",
+            "name_de-DE" : "Zucchini",
+            "buy_price": 120,
+            "buy_exp": 0,
+            "harvest_time": 15,
+            "harvest_income": 151,
+            "harvest_exp": 3,
+            "season": ["İlkbahar", "Kış"]
+        },
+
+        {
+            "id": 4,
+            "name": "Sarı Kabak",
+            "name_en-US": "Yellow Zucchini",
+            "name_de-DE" : "Gelbe Zucchini",
+            "buy_price": 850,
+            "buy_exp": 2,
+            "harvest_time": 15,
+            "harvest_income": 909,
+            "harvest_exp": 6,
+            "season": ["İlkbahar", "Kış"]
+        },
+
+        {
+            "id": 5,
+            "name": "Havuç",
+            "name_en-US": "Carrot",
+            "name_de-DE" : "Karotte",
+            "buy_price": 35,
+            "buy_exp": 0,
+            "harvest_time": 20,
+            "harvest_income": 60,
+            "harvest_exp": 2,
+            "season": ["İlkbahar", "Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 6,
+            "name": "Kanlıca Mantarı",
+            "name_en-US": "Red Pine Mushroom",
+            "name_de-DE" : "Edel-Reizker",
+            "buy_price": 450,
+            "buy_exp": 1,
+            "harvest_time": 20,
+            "harvest_income": 482,
+            "harvest_exp": 6,
+            "season": ["Sonbahar"]
+        },
+
+        {
+            "id": 7,
+            "name": "Siyah Kurt Üzümü",
+            "name_en-US": "Black Goji Berry",
+            "name_de-DE" : "Schwarze Gojibeeren",
+            "buy_price": 2250,
+            "buy_exp": 4,
+            "harvest_time": 25,
+            "harvest_income": 2400,
+            "harvest_exp": 10,
+            "season": ["İlkbahar", "Yaz"]
+        },
+
+        {
+            "id": 8,
+            "name": "Yer Fıstığı",
+            "name_en-US": "Peanut",
+            "name_de-DE" : "Erdnüsse",
+            "buy_price": 40,
+            "buy_exp": 0,
+            "harvest_time": 30,
+            "harvest_income": 66,
+            "harvest_exp": 3,
+            "season": ["Yaz", "Kış"]
+        },
+
+        {
+            "id": 9,
+            "name": "Fasülye",
+            "name_en-US": "Beans",
+            "name_de-DE" : "Bohnen",
+            "buy_price": 200,
+            "buy_exp": 0,
+            "harvest_time": 30,
+            "harvest_income": 235,
+            "harvest_exp": 7,
+            "season": ["Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 10,
+            "name": "Lahana",
+            "name_en-US": "Cabbage",
+            "name_de-DE" : "Kohl",
+            "buy_price": 100,
+            "buy_exp": 0,
+            "harvest_time": 45,
+            "harvest_income": 142,
+            "harvest_exp": 5,
+            "season": ["İlkbahar", "Yaz"]
+        },
+
+        {
+            "id": 11,
+            "name": "Karnabahar",
+            "name_en-US": "Cauliflower",
+            "name_de-DE" : "Blumenkohl",
+            "buy_price": 260,
+            "buy_exp": 0,
+            "harvest_time": 45,
+            "harvest_income": 310,
+            "harvest_exp": 9,
+            "season": ["Sonbahar"]
+        },
+
+        {
+            "id": 12,
+            "name": "Pırasa",
+            "name_en-US": "Leek",
+            "name_de-DE" : "Lauch",
+            "buy_price": 1250,
+            "buy_exp": 3,
+            "harvest_time": 45,
+            "harvest_income": 1370,
+            "harvest_exp": 12,
+            "season": ["Kış"]
+        },
+
+        {
+            "id": 13,
+            "name": "Sarı Karnabahar",
+            "name_en-US": "Cheddar Cauliflower",
+            "name_de-DE" : "Cheddar Blumenkohl",
+            "buy_price": 2400,
+            "buy_exp": 5,
+            "harvest_time": 45,
+            "harvest_income": 2590,
+            "harvest_exp": 14,
+            "season": ["İlkbahar"]
+        },
+
+        {
+            "id": 14,
+            "name": "Şemsiye Mantarı",
+            "name_en-US": "Parasol Mushroom",
+            "name_de-DE" : "Riesenschirmpilz",
+            "buy_price": 170,
+            "buy_exp": 0,
+            "harvest_time": 60,
+            "harvest_income": 218,
+            "harvest_exp": 8,
+            "season": ["İlkbahar","Kış"]
+        },
+
+        {
+            "id": 15,
+            "name": "Kuşkonmaz",
+            "name_en-US": "Asparagus",
+            "name_de-DE" : "Spargel",
+            "buy_price": 840,
+            "buy_exp": 1,
+            "harvest_time": 60,
+            "harvest_income": 895,
+            "harvest_exp": 13,
+            "season": ["İlkbahar", "Yaz", "Kış"]        },
+
+        {
+            "id": 16,
+            "name": "Brokoli",
+            "name_en-US": "Broccoli",
+            "name_de-DE" : "Brokkoli",
+            "buy_price": 5000,
+            "buy_exp": 10,
+            "harvest_time": 60,
+            "harvest_income": 5220,
+            "harvest_exp": 20,
+            "season": ["Yaz", "Sonbahar"]
+        },
+
+        {
+            "id": 17,
+            "name": "Sarı Biber",
+            "name_en-US": "Yellow Pepper",
+            "name_de-DE" : "Gelbe Paprika",
+            "buy_price": 125,
+            "buy_exp": 0,
+            "harvest_time": 90,
+            "harvest_income": 180,
+            "harvest_exp": 10,
+            "season": ["İlkbahar", "Sonbahar"]
+        },
+
+        {
+            "id": 18,
+            "name": "Kırmızı Kurt Üzümü",
+            "name_en-US": "Red Goji Berry",
+            "name_de-DE" : "Rote Gojibeeren",
+            "buy_price": 1400,
+            "buy_exp": 3,
+            "harvest_time": 90,
+            "harvest_income": 1630,
+            "harvest_exp": 19,
+            "season": ["İlkbahar", "Yaz"]
+        },
+
+        {
+            "id": 19,
+            "name": "Domates",
+            "name_en-US": "Tomato",
+            "name_de-DE" : "Tomate",
+            "buy_price": 105,
+            "buy_exp": 0,
+            "harvest_time": 120,
+            "harvest_income": 155,
+            "harvest_exp": 12,
+            "season": ["İlkbahar"]
+        },
+
+        {
+            "id": 20,
+            "name": "Salatalık",
+            "name_en-US": "Cucumber",
+            "name_de-DE" : "Gurke",
+            "buy_price": 1300,
+            "buy_exp": 3,
+            "harvest_time": 120,
+            "harvest_income": 1490,
+            "harvest_exp": 23,
+            "season": ["Kış"]
+        },
+
+        {
+            "id": 21,
+            "name": "Ispanak",
+            "name_en-US": "Spinach",
+            "name_de-DE" : "Spinat",
+            "buy_price": 6000,
+            "buy_exp": 12,
+            "harvest_time": 150,
+            "harvest_income": 6480,
+            "harvest_exp": 40,
+            "season": ["İlkbahar", "Yaz"]
+        },
+
+        {
+            "id": 22,
+            "name": "Patates",
+            "name_en-US": "Potato",
+            "name_de-DE" : "Kartoffel",
+            "buy_price": 60,
+            "buy_exp": 0,
+            "harvest_time": 180,
+            "harvest_income": 115,
+            "harvest_exp": 10,
+            "season": ["İlkbahar", "Yaz", "Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 23,
+            "name": "Kuru Soğan",
+            "name_en-US": "Yellow Onion",
+            "name_de-DE" : "Gelbe Zwiebel",
+            "buy_price": 80,
+            "buy_exp": 0,
+            "harvest_time": 210,
+            "harvest_income": 141,
+            "harvest_exp": 14,
+            "season": ["İlkbahar", "Yaz", "Sonbahar"]
+        },
+
+        {
+            "id": 24,
+            "name": "Sarmısak",
+            "name_en-US": "Garlic",
+            "name_de-DE" : "Knoblauch",
+            "buy_price": 300,
+            "buy_exp": 0,
+            "harvest_time": 210,
+            "harvest_income": 404,
+            "harvest_exp": 23,
+            "season": ["Yaz", "Sonbahar"]
+        },
+
+        {
+            "id": 25,
+            "name": "Soya Fasülyesi",
+            "name_en-US": "Soybean",
+            "name_de-DE" : "Sojabohne",
+            "buy_price": 2750,
+            "buy_exp": 5,
+            "harvest_time": 210,
+            "harvest_income": 3070,
+            "harvest_exp": 38,
+            "season": ["Kış"]
+        },
+
+        {
+            "id": 26,
+            "name": "Aloe Vera",
+            "name_en-US": "Aloe Vera",
+            "name_de-DE" : "Aloe Vera",
+            "buy_price": 150,
+            "buy_exp": 0,
+            "harvest_time": 240,
+            "harvest_income": 212,
+            "harvest_exp": 18,
+            "season": ["Yaz", "Kış"]
+        },
+
+        {
+            "id": 27,
+            "name": "Yaban Mersini",
+            "name_en-US": "Blackberry",
+            "name_de-DE" : "Blaubeere",
+            "buy_price": 220,
+            "buy_exp": 0,
+            "harvest_time": 240,
+            "harvest_income": 270,
+            "harvest_exp": 20,
+            "season": ["Yaz", "Kış"]
+        },
+
+        {
+            "id": 28,
+            "name": "Siyah Karabiber",
+            "name_en-US": "Black Peppercorn",
+            "name_de-DE" : "Schwarzer Pfeffer",
+            "buy_price": 500,
+            "buy_exp": 1,
+            "harvest_time": 240,
+            "harvest_income": "1 diamond",
+            "harvest_exp": 25,
+            "season": ["Yaz", "Sonbahar"]
+        },
+
+        {
+            "id": 29,
+            "name": "Kırmızı Soğan",
+            "name_en-US": "Red Onion",
+            "name_de-DE" : "Rote Zwiebel",
+            "buy_price": 440,
+            "buy_exp": 1,
+            "harvest_time": 300,
+            "harvest_income": 538,
+            "harvest_exp": 30,
+            "season": ["İlkbahar", "Yaz", "Sonbahar"]
+        },
+
+        {
+            "id": 30,
+            "name": "Beyaz Karabiber",
+            "name_en-US": "White Peppercorn",
+            "name_de-DE" : "Weißer Pfeffer",
+            "buy_price": 2200,
+            "buy_exp": 4,
+            "harvest_time": 300,
+            "harvest_income": "4 diamond",
+            "harvest_exp": 40,
+            "season": ["Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 31,
+            "name": "Mor Üzüm",
+            "name_en-US": "Blue Grape",
+            "name_de-DE" : "Blaue Trauben",
+            "buy_price": 50,
+            "buy_exp": 0,
+            "harvest_time": 360,
+            "harvest_income": 93,
+            "harvest_exp": 16,
+            "season": ["Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 32,
+            "name": "Pancar",
+            "name_en-US": "Beet",
+            "name_de-DE" : "Rübe",
+            "buy_price": 800,
+            "buy_exp": 2,
+            "harvest_time": 360,
+            "harvest_income": 1090,
+            "harvest_exp": 40,
+            "season": ["İlkbahar", "Yaz", "Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 33,
+            "name": "Kırmızı Turp",
+            "name_en-US": "Radish",
+            "name_de-DE" : "Rettich",
+            "buy_price": 3000,
+            "buy_exp": 6,
+            "harvest_time": 360,
+            "harvest_income": 3480,
+            "harvest_exp": 54,
+            "season": ["İlkbahar", "Yaz", "Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 34,
+            "name": "Zerdeçal",
+            "name_en-US": "Turmeric",
+            "name_de-DE" : "Kurkuma",
+            "buy_price": 10000,
+            "buy_exp": 20,
+            "harvest_time": 390,
+            "harvest_income": "12 diamond",
+            "harvest_exp": 100,
+            "season": ["İlkbahar"]
+        },
+
+        {
+            "id": 35,
+            "name": "Enginar",
+            "name_en-US": "Artichoke",
+            "name_de-DE" : "Artischocke",
+            "buy_price": 7000,
+            "buy_exp": 14,
+            "harvest_time": 420,
+            "harvest_income": 7960,
+            "harvest_exp": 80,
+            "season": ["İlkbahar", "Kış"]
+        },
+
+        {
+            "id": 36,
+            "name": "Bezelye",
+            "name_en-US": "Peas",
+            "name_de-DE" : "Erbsen",
+            "buy_price": 180,
+            "buy_exp": 0,
+            "harvest_time": 480,
+            "harvest_income": 262,
+            "harvest_exp": 30,
+            "season": ["İlkbahar", "Sonbahar"]
+        },
+
+        {
+            "id": 37,
+            "name": "Ayçiçeği",
+            "name_en-US": "Sunflower",
+            "name_de-DE" : "Sonnenblume",
+            "buy_price": 1500,
+            "buy_exp": 3,
+            "harvest_time": 480,
+            "harvest_income": 2060,
+            "harvest_exp": 55,
+            "season": ["İlkbahar", "Sonbahar"]
+        },
+
+        {
+            "id": 38,
+            "name": "Sabır Otu",
+            "name_en-US": "Agave",
+            "name_de-DE" : "Agave",
+            "buy_price": 400,
+            "buy_exp": 1,
+            "harvest_time": 600,
+            "harvest_income": 602,
+            "harvest_exp": 48,
+            "season": ["Yaz", "Kış"]
+        },
+
+        {
+            "id": 39,
+            "name": "Beyaz Süpürgedarısı",
+            "name_en-US": "White Sorghum",
+            "name_de-DE" : "Weiße Hirse",
+            "buy_price": 2350,
+            "buy_exp": 5,
+            "harvest_time": 600,
+            "harvest_income": 3070,
+            "harvest_exp": 70,
+            "season": ["Yaz"]
+        },
+
+        {
+            "id": 40,
+            "name": "Pamuk",
+            "name_en-US": "Cotton",
+            "name_de-DE" : "Baumwolle",
+            "buy_price": 100,
+            "buy_exp": 0,
+            "harvest_time": 720,
+            "harvest_income": 196,
+            "harvest_exp": 35,
+            "season": ["İlkbahar", "Yaz", "Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 41,
+            "name": "Kırmızı Biber",
+            "name_en-US": "Red Pepper",
+            "name_de-DE" : "Rote Paprika",
+            "buy_price": 750,
+            "buy_exp": 1,
+            "harvest_time": 720,
+            "harvest_income": 1070,
+            "harvest_exp": 55,
+            "season": ["İlkbahar", "Yaz"]
+        },
+
+        {
+            "id": 42,
+            "name": "Pazı",
+            "name_en-US": "Chard",
+            "name_de-DE" : "Mangold",
+            "buy_price": 12000,
+            "buy_exp": 24,
+            "harvest_time": 900,
+            "harvest_income": 14600,
+            "harvest_exp": 150,
+            "season": ["Yaz"]
+        },
+
+        {
+            "id": 43,
+            "name": "Ananas",
+            "name_en-US": "Pineapple",
+            "name_de-DE" : "Ananas",
+            "buy_price": 5500,
+            "buy_exp": 11,
+            "harvest_time": 960,
+            "harvest_income": 6700,
+            "harvest_exp": 115,
+            "season": ["Yaz"]
+        },
+
+        {
+            "id": 44,
+            "name": "Kara Lahana",
+            "name_en-US": "Lombardy Cabbage",
+            "name_de-DE" : "Rotkohl",
+            "buy_price": 500,
+            "buy_exp": 1,
+            "harvest_time": 1080,
+            "harvest_income": 782,
+            "harvest_exp": 65,
+            "season": ["İlkbahar", "Sonbahar"]
+        },
+
+        {
+            "id": 45,
+            "name": "Patlıcan",
+            "name_en-US": "Eggplant",
+            "name_de-DE" : "Aubergine",
+            "buy_price": 80,
+            "buy_exp": 0,
+            "harvest_time": 1440,
+            "harvest_income": 215,
+            "harvest_exp": 35,
+            "season": ["İlkbahar", "Yaz", "Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 46,
+            "name": "Buğday",
+            "name_en-US": "Wheat",
+            "name_de-DE" : "Weizen",
+            "buy_price": 400,
+            "buy_exp": 1,
+            "harvest_time": 1440,
+            "harvest_income": 731,
+            "harvest_exp": 74,
+            "season": ["İlkbahar", "Kış"]
+        },
+
+        {
+            "id": 47,
+            "name": "Kivi",
+            "name_en-US": "Kiwifruit",
+            "name_de-DE" : "Kiwi",
+            "buy_price": 1000,
+            "buy_exp": 2,
+            "harvest_time": 1440,
+            "harvest_income": 1480,
+            "harvest_exp": 86,
+            "season": ["İlkbahar"]
+        },
+
+        {
+            "id": 48,
+            "name": "Çilek",
+            "name_en-US": "Strawberry",
+            "name_de-DE" : "Erdbeeren",
+            "buy_price": 800,
+            "buy_exp": 2,
+            "harvest_time": 2160,
+            "harvest_income": 1360,
+            "harvest_exp": 105,
+            "season": ["Yaz", "Sonbahar"]
+        },
+
+        {
+            "id": 49,
+            "name": "Balkabağı",
+            "name_en-US": "Pumpkin",
+            "name_de-DE" : "Kürbis",
+            "buy_price": 100,
+            "buy_exp": 0,
+            "harvest_time": 2880,
+            "harvest_income": 342,
+            "harvest_exp": 65,
+            "season": ["Yaz", "Sonbahar"]
+        },
+
+        {
+            "id": 50,
+            "name": "Karpuz",
+            "name_en-US": "Watermelon",
+            "name_de-DE" : "Wassermelone",
+            "buy_price": 250,
+            "buy_exp": 0,
+            "harvest_time": 2880,
+            "harvest_income": 692,
+            "harvest_exp": 95,
+            "season": ["İlkbahar", "Yaz", "Sonbahar", "Kış"]
+        },
+
+        {
+            "id": 51,
+            "name": "Mısır",
+            "name_en-US": "Corn",
+            "name_de-DE" : "Mais",
+            "buy_price": 2000,
+            "buy_exp": 4,
+            "harvest_time": 2880,
+            "harvest_income": 2800,
+            "harvest_exp": 140,
+            "season": ["İlkbahar", "Sonbahar"]
+        },
+
+        {
+            "id": 52,
+            "name": "Mor Karnabahar",
+            "name_en-US": "Graffiti Cauliflower",
+            "name_de-DE" : "Graffiti Blumenkohl",
+            "buy_price": 4500,
+            "buy_exp": 9,
+            "harvest_time": 2880,
+            "harvest_income": 6500,
+            "harvest_exp": 210,
+            "season": ["Sonbahar"]
+        }
+
+    ]
+}
