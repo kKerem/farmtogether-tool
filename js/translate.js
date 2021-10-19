@@ -19,7 +19,7 @@ $(function () {
             "ekme" : "Planting",
             "hasat" : "Harvest",
             "sure" : "Duration",
-            "ekilebilir" : "Arable",
+            "ekilebilir" : "Cultivable",
             "maaliyet" : "Cost",
             "kazanc" : "Earning",
 
