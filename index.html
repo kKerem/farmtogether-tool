@@ -148,7 +148,11 @@ $(function() {
       $table.bootstrapTable('refreshOptions', {
         locale: $(this).val()
       })
-      $table.bootstrapTable('changeTitle', {
+      
+      switch ($('#locale').val()) {
+        case "tr-TR":
+        secili_dil = 'tr'
+        $table.bootstrapTable('changeTitle', {
         name : dictionary[secili_dil]['tohum'],
         buy_price : dictionary[secili_dil]['ekme'],
         harvest_income : dictionary[secili_dil]['hasat'],
@@ -157,15 +161,30 @@ $(function() {
         maaliyet : dictionary[secili_dil]['maaliyet'],
         kazanc : dictionary[secili_dil]['kazanc'],
       })
-      switch ($('#locale').val()) {
-        case "tr-TR":
-        secili_dil = 'tr'
           break;
         case "de-DE":
         secili_dil = 'de'
+        $table.bootstrapTable('changeTitle', {
+        name : dictionary[secili_dil]['tohum'],
+        buy_price : dictionary[secili_dil]['ekme'],
+        harvest_income : dictionary[secili_dil]['hasat'],
+        harvest_time : dictionary[secili_dil]['sure'],
+        ekilebilir : dictionary[secili_dil]['ekilebilir'],
+        maaliyet : dictionary[secili_dil]['maaliyet'],
+        kazanc : dictionary[secili_dil]['kazanc'],
+      })
           break;
         default:
         secili_dil = 'en'
+        $table.bootstrapTable('changeTitle', {
+        name : dictionary[secili_dil]['tohum'],
+        buy_price : dictionary[secili_dil]['ekme'],
+        harvest_income : dictionary[secili_dil]['hasat'],
+        harvest_time : dictionary[secili_dil]['sure'],
+        ekilebilir : dictionary[secili_dil]['ekilebilir'],
+        maaliyet : dictionary[secili_dil]['maaliyet'],
+        kazanc : dictionary[secili_dil]['kazanc'],
+      })
           break;
       }
     })
