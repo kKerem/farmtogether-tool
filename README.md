@@ -6,7 +6,7 @@ This tool basically calculates how much money they can get from what they plant.
 All you have to do write your money in money sections.
 
 ### Live Preview
-https://kkerem.com/project/farmtogethertool/
+[https://kkerem.com/project/farmtogethertool/](https://kkerem.github.io/farmtogether-tool/)
 
 <hr>
 
